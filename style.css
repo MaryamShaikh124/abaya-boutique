@@ -1,0 +1,347 @@
+/* =========================
+   General CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #faf7f2;
+    line-height: 1.6;
+}
+
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: #5b3a70;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 10px;
+}
+
+
+/* =========================
+   Navigation Bar
+========================= */
+
+header {
+    background-color: #5b3a70;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 18px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #c9a96e;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    background-color: #f1eaf5;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+}
+
+.hero-text {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.hero-text h2 {
+    color: #5b3a70;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #5b3a70;
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #3e2850;
+}
+
+
+/* =========================
+   Collection
+========================= */
+
+.product-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.product-card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #d9cce0;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.product-card img {
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #5b3a70;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #5b3a70;
+}
+
+
+/* =========================
+   Why Choose Us
+========================= */
+
+.features {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.feature {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border: 1px solid #d9cce0;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.feature h3 {
+    color: #5b3a70;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact {
+    background-color: #f1eaf5;
+
+    max-width: 100%;
+
+    text-align: center;
+
+     width: 100%;
+}
+
+.contact p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    background-color: #3e2850;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .product-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .hero-text h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .nav-links {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+
+    }
+
+    .hero {
+
+        min-height: 70vh;
+
+        padding: 30px 15px;
+
+    }
+
+    .hero-text h2 {
+
+        font-size: 28px;
+
+    }
+
+    .hero-text p {
+
+        font-size: 16px;
+
+    }
+
+    .product-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .features {
+
+        flex-direction: column;
+
+    }
+
+    .section {
+
+        padding: 45px 0;
+
+    }
+
+}
